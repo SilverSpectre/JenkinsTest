@@ -8,6 +8,11 @@
 
 	<name>roshambo</name>
 
+  <distributionManagement>
+    <relocation>
+      <groupId>target</groupId>
+    </relocation>
+  </distributionManagement>
 
 	<dependencies>
 		<dependency>
