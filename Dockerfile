@@ -1,4 +1,4 @@
-FROM tomcat:8.0
+FROM tomcat:8.0-alpine
 
 LABEL maintainer="gweber@student.neumont.edu"
 
