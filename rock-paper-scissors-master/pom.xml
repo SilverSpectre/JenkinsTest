@@ -3,7 +3,7 @@
 	<!-- interesting -->
 	<groupId>com.mcnz.rps</groupId>
 	<artifactId>roshambo</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>war</packaging>
 
 	<name>roshambo</name>
@@ -21,8 +21,8 @@
    		<docker.image.prefix>rps</docker.image.prefix>
 	</properties>
 	<build>
+	<finalname>roshambo</finalname>
 	    <plugins>
-		    
 	        <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.0.0</version>
@@ -67,6 +67,17 @@
 			</buildArgs>
 		    </configuration>
 		</plugin>
+	<plugin>
+		<groupId>org.apache.tomcat.maven</groupId>
+		<artifactId>tomcat7-maven-plugin</artifactId>
+		<version>2.2</version>
+		<configuration>
+			<url>http://10.0.109.40:80/roshambo</url>
+			<path>/roshambo</path>
+			<username>adminTom</username>
+			<password>adminTom</passwrod>
+		</configuration>
+	</plugin>
 	    </plugins>
 	</build>
 </project>
