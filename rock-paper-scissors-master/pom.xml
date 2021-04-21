@@ -21,7 +21,6 @@
    		<docker.image.prefix>rps</docker.image.prefix>
 	</properties>
 	<build>
-	<finalname>roshambo</finalname>
 	    <plugins>
 	        <plugin>
           <artifactId>maven-clean-plugin</artifactId>
