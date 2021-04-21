@@ -74,7 +74,7 @@
 			<url>http://10.0.109.40:80/roshambo</url>
 			<path>/roshambo</path>
 			<username>adminTom</username>
-			<password>adminTom</passwrod>
+			<password>adminTom</password>
 		</configuration>
 	</plugin>
 	    </plugins>
