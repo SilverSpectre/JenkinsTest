@@ -2,9 +2,9 @@ FROM tomcat:8.0-alpine
 
 LABEL maintainer="gweber@student.neumont.edu"
 
-RUN rm -fr /usr/local/tomcat/webapps/ROOT
+COPY rock-paper-scissors-master/target/roshambo-1.war /usr/local/tomcat/webapps/roshambo.war
 
-COPY rock-paper-scissors-master/target/roshambo-1.war /usr/local/tomcat/webapps/ROOT.war
+CMD ["ls /usr/local/tomcat/webapps"]
 
 EXPOSE 8080
 
