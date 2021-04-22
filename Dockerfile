@@ -2,7 +2,7 @@ FROM tomcat:8.0-alpine
 
 LABEL maintainer="gweber@student.neumont.edu"
 
-ADD rock-paper-scissors-master/target/roshambo.war /usr/local/tomcat/webapps/ROOT
+ADD rock-paper-scissors-master/target/roshambo-1.war /usr/local/tomcat/webapps/ROOT
 
 EXPOSE 8080
 
